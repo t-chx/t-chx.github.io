@@ -12,7 +12,7 @@ date:   2019-01-16 11:45:00 +0800
 1、安装Anaconda
 
 2、运行Jupyter Notebook时出现环境变量问题，如下
->
+(```)
 The Jupyter HTML Notebook.
 
 这将启动一个基于tornado的HTML笔记本服务器，它提供一个html5/
@@ -33,15 +33,15 @@ Traceback (most recent call last):
   File "/anaconda2/lib/python2.7/site-packages/traitlets/config/application.py", line 377, in print_subcommands
     print(os.linesep.join(lines))
 UnicodeDecodeError: 'ascii' codec can't decode byte 0xe5 in position 4: ordinal not in range(128)
->
+(```)
 
 3、运行以下程序，修改环境变量
->
+(```)
 $ LANG=zn jupyter-notebook
->
+(```)
 
 查询环境变量
->
+(```)
 $ env
 TERM_PROGRAM=Apple_Terminal
 SHELL=/bin/bash
@@ -67,4 +67,4 @@ CONDA_PYTHON_EXE=/anaconda2/bin/python
 LOGNAME=xinchen
 CONDA_DEFAULT_ENV=base
 _=/usr/bin/env
->
+(```)
